@@ -1,0 +1,18 @@
+{
+  "title": "@title",
+  "author": "taber",
+  "h1": "页面大标题",
+  "h2": "副标题",
+  "intro": "页面介绍",
+  "items|2-5": [{
+    "name": "@name",
+    "age|20-40": 1
+  }],
+  "build|2-5": [{
+    "name": "@title",
+    "floor|6-10": [{
+      "name": "@name",
+      "area|100-600": 1
+    }]
+  }]
+}

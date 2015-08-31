@@ -1,0 +1,39 @@
+#! /usr/bin/env node --harmony
+
+var program = require('commander')
+var pkg = require('../package.json')
+var Tpt = require('../')
+
+program
+  .version(pkg.version)
+  .option('-p, --port', 'change the port')
+  .action(function(port) {
+    Tpt.launch(port)
+  })
+
+program
+  .command('create [name]')
+  .description('Create template')
+  .action(function(name) {
+    Tpt.create(name)
+  })
+
+program
+  .command('publish [name]')
+  .description('Publish template')
+  .action(function(name) {
+    Tpt.publish(name)
+  })
+
+program
+  .command('config')
+  .description('Config tool')
+  .action(function() {
+    Tpt.config()
+  })
+
+program.parse(process.argv)
+
+if (process.argv.length <= 2) {
+  Tpt.launch(1989)
+}
