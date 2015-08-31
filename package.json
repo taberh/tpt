@@ -1,6 +1,6 @@
 {
   "name": "kongge-tpt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "## Commands",
   "main": "index.js",
   "bin": {
