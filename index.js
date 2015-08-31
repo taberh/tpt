@@ -198,11 +198,12 @@ function copyDescription(newSchema, oldSchema) {
         oldSchema = {}
     }
 
-    newSchema.description = oldSchema.description
+    newSchema.description = oldSchema.description || '请输入字段描述'
 
     for (var k in newSchema.properties) {
         var v = newSchema.properties[k]
         var ov = oldSchema.properties && oldSchema.properties[k] || {}
+
         v.description = ov.description || '请输入字段描述'
 
         if (v.type === 'array') {
