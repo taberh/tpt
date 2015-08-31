@@ -110,7 +110,7 @@ exports.publish = function(name) {
         oldSchema = fs.readJSONSync(schemaPath)
     }
 
-    newSchema = GenerateSchema.json('JSON Schema', mockData)
+    newSchema = GenerateSchema.json('数据编辑器', mockData)
 
     // copy default value
     copyDefault(newSchema, mockData)
