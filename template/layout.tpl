@@ -6,9 +6,12 @@
     <meta name="author" content="{{author}}">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
+    <meta name="tracker-id-t" content="20003">
+    <meta name="tracker-id-dt" content="{{pageId}}">
     <title>{{title}}</title>
   </head>
   <body>
+    <script>with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("id","kongge-tracker",src="//g.kongge.com/tracker/t.js")</script>
     <h1>{{h1}}</h1>
     <h2>{{h2}}</h2>
     <p>{{intro}}</p>
