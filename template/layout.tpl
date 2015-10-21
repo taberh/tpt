@@ -7,7 +7,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="tracker-id-t" content="20003">
-    <meta name="tracker-id-dt" content="{{pageId}}">
+    <meta name="tracker-id-dt" content="1_{{pageId}}">
     <title>{{title}}</title>
   </head>
   <body>
